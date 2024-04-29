@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.container{
+    margin: auto;
+    max-width: 1200px;
+}
+a{
+    text-decoration: none;
+    
+}
+header {
+    position: sticky;
+    top: 0;
+}
+.headerbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #c74712;
+
+    
+}
+
+.headerbar img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+
+}
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    list-style-type: none;
+    
+}
+header a{
+    color: #fff;
+}
+.btn{
+    border: 1px solid #fff;
+    padding: 5px 20px;
+}
+.social{
+    font-size: 1.5rem;
+    width: 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.hero{
+background-image: url(https://www.tasteandflavors.com/wp-content/uploads/2022/08/AMAZONICO-1024x683.jpg); 
+background-size: cover;
+object-fit: cover;
+height: 90vh;
+width: 100%;
+display: flex;
+align-items: center;
+
+
+}
+.herocontent{
+    text-align: center;
+    font-size: 2rem;
+    width: 70%;
+    margin: auto;
+    color: #fff;
+    text-shadow: 2px 2px  #000;
+    /* background-color:  #0101015c; */
+    
+    padding: 5px 20px;
+    
+}
+.herocontent a{
+    color: #204f2b;
+    border: 1px solid #204f2b;
+    border-radius: 8px;
+    padding: 5px 20px;
+    background-color: #efe558bc;
+    text-shadow: none;
+    display: inline-block;
+    margin-top: 20px;
+    
+    
+}
+

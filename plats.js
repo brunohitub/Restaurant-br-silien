@@ -1,0 +1,35 @@
+// Envoie une requête GET à l'URL de l'api pour récupérer des données
+fetch("restaurantBresilien.json")
+  // Une fois que la réponse est reçue
+  .then(rep => {
+    // transforme la reponse obtenu en JSON 
+    return rep.json();
+  })
+  // Une fois que les données JSON sont extraites avec succès, jeles transmet à une fonction pour l'utiliser plus tard
+  .then(data => {
+    // Appelle la fonction addProducts() avec les données JSON en entrée
+    addProducts(data);
+  });
+
+// Cette fonction prend les données JSON en entrée et effectue une action sur celles-ci
+function addProducts(data) {
+  // Affiche les données dans la console du navigateur
+  console.log(data);
+  let plat = "";
+  data.entreprise.plats.forEach((p) => {
+    plat += 
+    document.querySelector("#card").innerHTML +=
+    `
+    <article>
+    <div class="infocard">
+    <h2>${p.nom}</h2>
+    <p>${p.description}</p>
+</div>
+    <img src="${p.image}" alt="img du plat">
+</article>
+
+    `;
+  });
+
+console.log(plat);
+}
