@@ -15,7 +15,7 @@ fetch("restaurantBresilien.json")
   
   let temoin ="";
   data.entreprise.temoignages.forEach( (t)=> {
-    temoin += `<div class="temoignage"> <h4>${t.prenom}</h4> <p class="badge">${t.typeExperience}</p> <p>${t.commentaire}</p> ${avis(t.note)} </div> `
+    temoin += `<div class="temoignage"> <h4>${t.prenom}</h4> <p class="badge">${t.typeExperience}</p> <p><i class="fa-solid fa-quote-left"></i>${t.commentaire}<i class="fa-solid fa-quote-right"></i></p> ${avis(t.note)} </div> `
     
   });
 function avis(note){
@@ -28,14 +28,29 @@ function avis(note){
     }
     return chaine;
 }
-document.querySelector("#temoign").innerHTML += 
+document.querySelector("#temoignages").innerHTML += 
 `
-<div class="temoignage">
-<h4>${temoin}<h4>
-<p></p>
-<p></p>
+${temoin}
 
 
-</div>
 `
   }
+  var map = L.map('map').setView([43.30391977807304, 5.364327318420163], 13);
+
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+
+L.marker([43.30391977807304, 5.364327318420163]).addTo(map)
+    .bindPopup('tudo de bom, Marseille.')
+    .openPopup();
+
+    function icon(typeExperience){
+      if (typeExperience==="Cours de Cuisine"){
+        document.querySelector(".badge").innerHTML +=
+        `
+        <i class="fa-solid fa-utensils"></i>${typeExperience}
+
+        `
+      }
+    }

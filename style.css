@@ -153,21 +153,71 @@ left: 30%;
     width: 50%;
     margin-left: 20px;
 }
-#temoign{
-    margin-top: 100px;
+.cardtemoignage{
     height: 90vh;
+}
+.m70{
+    margin-top: 70px;
     
-    border-radius: 8px;
-
+}
+.flexbox{
+    flex-direction: row;
 }
 .temoignage{
     border: 1px solid #fff;
     color: #204f2b;
     border-radius: 8px;
     padding: 5px 15px;
-    margin: 20px;
     background-color: #efe558bc;
-    /* width: 100%;
-    height: 90vh; */
+    width: 30%; 
+    height: 250px;
+    text-align: center;
     
+}
+#temoignages{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.badge{
+    border: 2px solid #204f2b;
+    border-radius: 8px;
+}
+#map{
+    width: 50%;
+    height: 500px;
+    z-index: -1;
+    
+}
+.accesmap{
+    text-align: center;
+    margin: auto;
+
+}
+.accesmap h4{
+    font-size: 2rem;
+}
+
+.divmap{
+    border: 2px solid #efe558bc;
+    border-radius: 8px;
+    padding: 0 5px;
+    height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer nav ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    align-items: center;
+    background-color: #efe558bc;
+    color: #fff;
 }
