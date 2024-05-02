@@ -226,7 +226,7 @@ footer{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-#card{
+/* #card{
 
     max-width: 90%;
   margin: auto;
@@ -235,10 +235,22 @@ footer{
   justify-content: space-between;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
    
+} */
+.carte{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    border-bottom:2px solid #efe558bc;
+    border-top:2px solid #efe558bc;
 }
 #card img{
-    width: 100%;
+    width: 40%;
     object-fit: cover;
+}
+.infocard{
+    width: 60%;
+    padding: 5px;
 }
 
 .recette{
@@ -247,6 +259,7 @@ footer{
     padding-bottom: 30px;
     gap: 30;
     border-bottom: 2px solid #204f2b;
+    
     
 }
 .recette a{

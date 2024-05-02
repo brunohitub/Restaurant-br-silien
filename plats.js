@@ -15,12 +15,12 @@ fetch("restaurantBresilien.json")
 function addProducts(data) {
   // Affiche les données dans la console du navigateur
   console.log(data);
-  let plat = "";
+  
   data.entreprise.plats.forEach((p) => {
+    let plat = "";
     plat += 
-    document.querySelector("#card").innerHTML +=
     `
-    <article>
+    <article class="carte">
     <div class="infocard">
     <h2>${p.nom}</h2>
     <p>${p.description}</p>
@@ -29,6 +29,9 @@ function addProducts(data) {
 </article>
 
     `;
+    document.querySelector("#card").innerHTML +=
+    `${plat}`
+    
   });
 
 console.log(plat);
