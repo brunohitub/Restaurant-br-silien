@@ -184,6 +184,16 @@ left: 30%;
     border: 2px solid #204f2b;
     border-radius: 8px;
 }
+
+.imgservices{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.image1ss{
+    
+}
+
 #map{
     width: 50%;
     height: 500px;
@@ -226,16 +236,6 @@ footer{
     margin-top: 20px;
     margin-bottom: 20px;
 }
-/* #card{
-
-    max-width: 90%;
-  margin: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-   
-} */
 .carte{
     display: flex;
     justify-content: space-between;
@@ -243,11 +243,16 @@ footer{
     width: 100%;
     border-bottom:2px solid #efe558bc;
     border-top:2px solid #efe558bc;
+    background-color: #fff;
 }
-#card img{
+.carte img{
     width: 40%;
-    object-fit: cover;
 }
+.cardtemoignage{
+    z-index: -1;
+    position: relative;
+}
+
 .infocard{
     width: 60%;
     padding: 5px;
@@ -259,6 +264,8 @@ footer{
     padding-bottom: 30px;
     gap: 30;
     border-bottom: 2px solid #204f2b;
+    background-color: #fff;
+    
     
     
 }
@@ -268,4 +275,10 @@ footer{
 }
 .recette a:hover{
     color: #204f2ba2;
+}
+main{
+    background-image: url(https://cdn.tapetender70er.de/media/image/91/54/05/431282_Paradiso_1348x693.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
 }

@@ -29,9 +29,15 @@ function addProducts(data) {
 </article>
 
     `;
-    document.querySelector("#card").innerHTML +=
-    `${plat}`
-    
+
+    if (p.type === "plat"){
+      document.querySelector("#Plats").innerHTML +=
+      `${plat}`
+    }
+    else if (p.type === "cocktail"){
+      document.querySelector("#Cocktails").innerHTML += 
+      `${plat}`
+    }
   });
 
 console.log(plat);
