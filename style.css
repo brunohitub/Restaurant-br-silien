@@ -221,3 +221,38 @@ footer{
     background-color: #efe558bc;
     color: #fff;
 }
+/* css pour plats */
+.titreplat{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#card{
+
+    max-width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+   
+}
+#card img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.recette{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 30;
+    border-bottom: 2px solid #204f2b;
+    
+}
+.recette a{
+    color: #204f2b;
+    margin: 20px;
+}
+.recette a:hover{
+    color: #204f2ba2;
+}
