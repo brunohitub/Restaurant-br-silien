@@ -21,6 +21,8 @@ function addProducts(data) {
 
         ` 
     });
+    document.querySelector("#service").innerHTML += 
+    `${service}`
   
   console.log(data);
 }
