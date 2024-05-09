@@ -17,7 +17,7 @@ function addProducts(data) {
     data.entreprise.services.forEach( (s) => {
         service += 
         `
-        <div class="service"> <h4>${s.nom}</h4> <p>${s.description}</p> </div>
+        <div class="service container"> <h4>${s.nom}</h4> <p>${s.description}</p> </div>
 
         ` 
     });

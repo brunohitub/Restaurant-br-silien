@@ -155,6 +155,7 @@ left: 30%;
 }
 .cardtemoignage{
     height: 90vh;
+
 }
 .m70{
     margin-top: 70px;
@@ -232,9 +233,14 @@ footer{
     display: flex;
     justify-content: space-evenly;
     padding: 20px;
-    align-items: center;
+    /* align-items: center; */
     background-color: #efe558bc;
     color: #fff;
+}
+.contact{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
 }
 /* css pour plats */
 .titreplat{
@@ -296,4 +302,20 @@ main{
 }
 #sectionPlats{
     scroll-margin-top: 185px;
+}
+/* css pour services */
+.service{
+    width: 45%;
+    border: 2px solid #204f2b;
+    height: 90vh;
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    
+    
+}
+#service{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
